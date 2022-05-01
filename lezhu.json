@@ -133,11 +133,11 @@
   "dtUrlNameR": "",
   "playUrl": "http://www.lezhutv.com/play/{playUrl}.html",
   "playUa": "",
-  "searchUrl": "http://www.lezhutv.com/index.php/ajax/suggest?mid=1&wd={wd}&limit=10",
-  "scVodNode": "json:list",
-  "scVodName": "name",
-  "scVodId": "id",
-  "scVodIdR": "",
-  "scVodImg": "pic",
-  "scVodMark": ""
+  "searchUrl": "http://www.lezhutv.com/index.php?m=vod-search&wd={wd}",
+	"scVodNode": "//div[@class='tbox']/ul/li/a",
+	"scVodName": "/@title",
+	"scVodId": "/@href",
+	"scVodIdR": "/detail/(\\w+).html",
+	"scVodImg": "/@data-original",
+	"scVodMark": "/span/text()"
 }
